@@ -1,0 +1,60 @@
+/* Selector Body, contoh penggunaan selector tag Html */
+
+  body{
+    font-family:perpetua;
+  }
+
+/* Contoh Penggunaan grouping, bisa menggunakan(,) koma disini berfungsi sebagai dan */
+
+  h1, h2{
+    color:purple;
+  }
+
+/* Bacaannya yaitu, ubah a yang ada di dalam li, li yang berada di dalam ul, spasi berfungsi sebagai (di dalam) */
+
+  ul li a{
+    color:red;
+  }
+
+  ol li a{
+    color:green;
+  }
+
+  a{
+    color:black;
+  }
+
+/* untuk id diawali dengan # */
+/* menggunakan id harus sama kata kuncinya contoh: id="p1" di html, di css harus juga sama #p1 */
+
+  #p1{
+    color:green;
+  }
+
+/* untuk class diawali dengan (.) */
+/* menggunakan class boleh diketik kata kuncinya sebagian contoh class="p2 kuntul anying" bisa ditulis hanya .p2, .kuntul, .anying */
+
+  .p2{
+    color:red;
+  }
+
+  .kuntul{
+    font-family:calibri;
+  }
+
+  .anying{
+    text-transform:uppercase;
+  }
+
+/* jika 2 class memiliki kata kunci yg sama, bisa ditulis seperti ini: p.anying{} untuk yg di paragraf, dan bisa juga ditulis a.anying{} untuk yg di hyperlink */
+
+  a.anying{
+    font-size:30px;
+  }
+
+  p.anying{
+    font-weight:bolder;
+  }
+
+/* PENTING!!
+lebih baik menggunakan TAG HTML langsung, dan bisa juga menggunakan CLASS, hindari menggunakan id, karena tanggung jawab id lebih besar daripada class dan tag html*/

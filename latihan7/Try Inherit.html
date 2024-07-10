@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- PENTING!!!
+Konsep Inherit Yaitu parents-children atau orangtua dan anak, jadi apapun properti tag orang tua jika format sang anak menggunakan inherit, maka apapun atribut di orangtua akan sama di atribut sang anak juga. Contoh: tag body diberi format color green, secara default tag a akan berwarna biru (karena tag a/link defaultnya biru), jika kita ingin warna yang ada di tag a sama dengan warna di tag body, kita hanya perlu memasukkan format inherit (a{
+	color: inherit;
+})
+dan contoh lagi 1, jika terdapat dua tag di dalam 1 tag maka yg jadi parent dari tag ke2 adalah tag 1/ tag yang di awal, contoh: tag UL memiliki warna merah dan didalamnya ada tag li dan a, otomatis tag a memiliki warna biru, jika kita ingin warna di tag a sama dengan di tag ul kita hanya perlu memasukkan format inherit (
+ul li a{
+	color: inherit;
+})
+ -->
+
+ <!-- Kebalikan dari Inherit yaitu INITIAl(awal), jadi penggunaannya yaitu misalnya jika di dalam tag body yang memiliki warna merah ada h1 dan p, jika tag h1 ingin kita rubah seperti warna awal/default(hitam), maka kita hanya perlu menulisnya seperti ini:
+	h1{
+		color: initial;
+	}
+ 	  -->
+
+	<title>
+		Inherit
+	</title>
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+	<h1>
+		Hallow Peace
+	</h1>
+
+	<h2>
+		Peace Broww..
+	</h2>
+
+	<a href="#" class="link1">
+		Klik this LINK
+	</a>
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+<br><br><br><br>
+	<ul style="color: red;">
+		<li><a href="#">Klik 1</a></li>
+		<li><a href="#">Klik 2</a></li>
+		<li><a href="#">Klik 3</a></li>
+		<li><a href="#">Klik 4</a></li>
+		<li><a href="#">Klik 5</a></li>
+		<li><a href="#">Klik 6</a></li>
+	</ul>
+
+</body>
+</html>

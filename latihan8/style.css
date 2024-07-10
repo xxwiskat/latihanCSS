@@ -1,0 +1,58 @@
+p{
+	color: red;
+}
+
+#p1{
+	color: darkgreen;
+}
+
+/*
+	Kenapa warna teks paragraf menjadi hijau?
+	Karena skor dari p= 0001
+						inline	id	class	elemen
+						   0     0    0        1
+
+
+						   			VS
+
+					 #p1= 0100
+					 	inline	id	class	elemen
+					 	   0 	 1 	  0        0
+	Jadi itulah kenapa warna teksnya menjadi hijau.
+*/
+
+
+ul#list1 li{
+	color: blue;
+}
+
+.myfav{
+	color: red;
+}
+
+/*
+	Skornya yaitu: 
+				ul#list1 li{}= 0102
+								inline	id	class	elemen
+								   0     1    0        2
+
+								   			VS
+						.myfav= 0010
+								inline	id	class	elemen
+								   0     0    1        0
+
+Jadi itu penyebabnya ul#list1 li yang menjadi acuannya/pilihannya
+*/
+
+/*	Jadi ada solusinya supaya yang menggunakan class bisa menjadi acuan
+	dengan cara ketikannya harus SPESIFIK. Contoh: 
+												ul#list1 li.myfav= 0112
+ */
+
+ol#wuenak li{
+	color: red;
+}
+
+ol#wuenak li.jos{
+	color: lightskyblue;
+}

@@ -1,0 +1,87 @@
+/* Value dari pseudo-class(hanya berhubungan dengan link)
+ .(nama class):link= style default pada sebuah link(a yang memiliki href)/tampilan awal link
+
+  .(nama class):hover= style ketika kursor mouse berada diatas sebuah link/elemen
+
+  .(nama class):active= style ketika sebuah link diklik(keadaan aktif)
+
+  .(nama class):visited= style ketika sebuah link sudah pernah dikunjungi sebelumnya(menggunakan browser yang sama)
+*/
+/*
+  Kaidah penulisan yang benar yaitu:
+  1. :link
+  2. :visited
+  3. :hover
+  4. :active
+*/
+
+  .hai:link{
+    color:black;
+  }
+
+  .hai:hover{
+    color:red;
+    font-family:courier new;
+    font-size:25px;
+  }
+
+  .hai:active{
+    font-style:italic;
+    font-weight:bolder;
+  }
+
+  .hai:visited{
+    color:darkred;
+  }
+
+
+/* Value dari Pseudo Class(yang berhubungan dengan posisi elemen) 
+  .(nama class):first-child= memilih elemen pertama dari sebuah parent (elemen pembungkusnya)
+
+  .(nama class):last-child= memilih elemen terakhir dari sebuah parent(elemen pembungkusnya)
+
+  .(nama class):nth-child(n)= memilih elemen ke-n dari sebuah parent(elemen pembungkusnya)
+  n bisa berarti urutan (1), (2), ... atau pola (2n) atau disebut kelipatan 2, 
+  (3n+2) artinya (3.1+2), (4n-1) artinya(4.1-1) atau ganjil dan genap (odd) & (even) 
+
+Penting!!
+Konsep kelipatan yaitu jika (3n) ingin kita tambahkan di urutan yg pertama bisa menggunakan (3n+1)/(3n-2) karna hasilnya sama, 
+Logikanya yaitu di urutan ketiga ketika (3n+1) jadi hasilnya (3n)default+1 
+
+PENTING!!
+  Konsepnya yaitu parent-child atau orangtua dan anak contohnya yaitu didalam tag ul(orang tua) terdapat li(anak), 
+  sesuai contoh diatas linya ada 10, di dalam li terdapat masing- masing 1 a(anak dari li)
+  biasanya digunakan untuk edit kolom supaya bisa belang-belang
+*/
+
+  li:nth-child(odd) a{
+    color:darkred;
+  }
+
+  li:nth-child(odd) a:hover{
+    color:green;
+  }
+
+/* Value dari Pseudo-class yang berhubungan dengan posisi elemen
+  (nama tag):first-of-type= memilih elemen pertama dari sebuah jenis/ tipe tag
+
+  (name tag):nth-of-type= memilih elemen spesifik dari sebuah jenis/tipe tag
+
+  (name tag):last-of-type= memilih elemen terakhir dari sebuah jenis/tipe tag
+*/
+
+  p:first-of-type{
+    color:red;
+  }
+
+  p:nth-of-type(2){
+    color:green;
+  }
+
+  p:nth-of-type(3){
+    color:purple;
+  }
+
+  ul{
+    list-style-type: square;
+  }

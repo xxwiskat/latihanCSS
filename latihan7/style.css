@@ -1,0 +1,16 @@
+body{
+	font-family: perpetua;
+	color: skyblue;
+}
+
+h2{
+	color: initial;
+}
+
+.link1{
+	color: inherit;
+}
+
+ul li a{
+	color: inherit;
+}
